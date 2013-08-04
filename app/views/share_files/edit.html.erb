@@ -1,0 +1,21 @@
+<h2><%= l(:label_share_file) %></h2>
+
+<%= form_for @attachment, :url => share_update_path(@attachment.container, @attachment), :method => :post do |f| %>
+    <div class="box">
+        <%= f.radio_button :sharing_state, Attachment::SHARING_STATES[:disabled] %>
+        <%= f.label :sharing_state, l(:label_share_disabled), :value => Attachment::SHARING_STATES[:disabled] %>
+        <br>
+        <%= f.radio_button :sharing_state, Attachment::SHARING_STATES[:basic] %>
+        <%= f.label :sharing_state, l(:label_share_basic), :value => Attachment::SHARING_STATES[:basic] %>
+        <br>
+        <%= f.radio_button :sharing_state, Attachment::SHARING_STATES[:public] %>
+        <%= f.label :sharing_state, l(:label_share_public), :value => Attachment::SHARING_STATES[:public] %>
+    </div>
+
+    <%= f.submit l(:label_share_update) %>
+<% end %>
+<br>
+<hr>
+<div class="box">
+  <%= l(:label_share_link) %>: <%= link_to @attachment.filename, share_download_path(@attachment.digest) %>
+</div>

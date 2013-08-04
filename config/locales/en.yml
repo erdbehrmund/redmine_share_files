@@ -1,0 +1,9 @@
+# English strings go here for Rails i18n
+en:
+  label_share_file: "Share file"
+  label_share_update: "Update settings"
+  label_share_link: "Link"
+  label_share_disabled: "Sharing disabled"
+  label_share_basic: "Sharing with HTTP-basic authentication"
+  label_share_public: "Sharing without authentication"
+

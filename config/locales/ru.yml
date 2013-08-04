@@ -1,0 +1,7 @@
+ru:
+  label_share_file: "Настройки общего доступа"
+  label_share_update: "Обновить настройки"
+  label_share_link: "Ссылка"
+  label_share_disabled: "Общий доступ отключен"
+  label_share_basic: "Общий доступ, HTTP-basic аутентификация"
+  label_share_public: "Общий доступ без аутентификации"
