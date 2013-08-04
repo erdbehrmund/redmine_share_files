@@ -35,7 +35,7 @@
     <td align="center">
     <%= link_to(image_tag('delete.png'), attachment_path(file),
                                          :data => {:confirm => l(:text_are_you_sure)}, :method => :delete) if delete_allowed %>
-    <%= link_to(image_tag('/plugin_assets/share_files/images/share.png'), share_file_path(file.container, file))%>
+    <%= link_to(image_tag('/plugin_assets/redmine_share_files/images/share.png'), share_file_path(file.container, file))%>
     </td>
   </tr>
   <% end
